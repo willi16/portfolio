@@ -1,16 +1,394 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DADO Koffi Jean Socrate — Développeur d'Applications</title>
+<meta name="description" content="Portfolio de DADO Koffi Jean Socrate, développeur full-stack (Django, Laravel) basé à Lomé, Togo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1><u>Renseignements</u></h1>
-    <h2>
-        Nom: DADO
-        Prenom: K. J. Socrate
-    </h2>
-    
+
+<div class="app">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <div class="brand">
+        <span class="brand-mark">KD</span>
+        <div class="brand-text">
+          <span class="brand-name">DADO Koffi</span>
+          <span class="brand-role">Développeur d'Applications</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#accueil" class="nav-link active" data-section="accueil"><span class="nav-index">~/</span>accueil</a>
+      <a href="#profil" class="nav-link" data-section="profil"><span class="nav-index">~/</span>profil</a>
+      <a href="#competences" class="nav-link" data-section="competences"><span class="nav-index">~/</span>competences</a>
+      <a href="#projets" class="nav-link" data-section="projets"><span class="nav-index">~/</span>projets</a>
+      <a href="#experience" class="nav-link" data-section="experience"><span class="nav-index">~/</span>experience</a>
+      <a href="#formation" class="nav-link" data-section="formation"><span class="nav-index">~/</span>formation</a>
+      <a href="#contact" class="nav-link" data-section="contact"><span class="nav-index">~/</span>contact</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        Disponible pour stage
+      </div>
+      <div class="social-row">
+        <a href="mailto:willifrancis39@gmail.com" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/koffi-jean-socrate-dado-22b01814b" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2 2 0 0 1 4 0V17M11.5 10H12"/></svg>
+        </a>
+        <a href="https://github.com/willi16" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+        </a>
+      </div>
+      <button class="theme-note" id="printBtn">Télécharger en PDF</button>
+    </div>
+  </aside>
+
+  <!-- ===== MOBILE TOP BAR ===== -->
+  <header class="mobile-bar">
+    <span class="brand-mark small">KD</span>
+    <span class="mobile-title">DADO Koffi Jean Socrate</span>
+    <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="main">
+
+    <!-- HERO / ACCUEIL -->
+    <section id="accueil" class="section hero">
+      <div class="hero-topline">
+        <span class="dot pulse"></span> SYSTEME — EN LIGNE · SOKODÉ / LOMÉ, TOGO
+      </div>
+      <h1 class="hero-title">
+        Je conçois des applications<br>
+        <span class="accent">qui gèrent de vrais métiers.</span>
+      </h1>
+      <p class="hero-sub">
+        Développeur d'applications full-stack — <strong>Django</strong>, <strong>Laravel</strong>, <strong>Spring Boot</strong>.
+        Issu d'un parcours en mathématiques et de trois années d'enseignement, j'apporte une rigueur analytique
+        à la conception de systèmes de gestion : universités, commerces, production.
+      </p>
+      <div class="hero-actions">
+        <a href="#projets" class="btn btn-primary">Voir les modules / projets</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">03</span>
+          <span class="stat-label">applications de gestion livrées</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">03</span>
+          <span class="stat-label">ans d'enseignement en maths & physique</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">3</span>
+          <span class="stat-label">frameworks backend maîtrisés</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="profil" class="section">
+      <h2 class="section-title"><span class="section-index">01</span>Profil</h2>
+      <div class="profile-grid">
+        <p class="profile-text">
+          Étudiant en fin de <strong>Licence Professionnelle Informatique des Organisations</strong>
+          (Option Développement d'Applications) à l'IFNTI de Sokodé, je recherche un stage de fin d'études
+          pour mettre en pratique mes compétences full-stack.
+          <br><br>
+          Mon parcours n'est pas linéaire : après une licence en <strong>Mathématiques</strong> à l'Université
+          de Lomé, j'ai enseigné les mathématiques et la physique pendant trois ans avant de me réorienter
+          vers le développement. Cette double expérience — logique formelle et pédagogie — nourrit directement
+          ma façon de concevoir des logiciels : décomposer un problème, structurer une solution, et la rendre
+          compréhensible pour ceux qui l'utilisent.
+        </p>
+        <div class="profile-card">
+          <div class="profile-card-row"><span>Localisation</span><span>Lomé / Sokodé, Togo</span></div>
+          <div class="profile-card-row"><span>Recherche</span><span>Stage de fin d'études</span></div>
+          <div class="profile-card-row"><span>Langues</span><span>Français, Anglais, Éwé/Adja-Éwé</span></div>
+          <div class="profile-card-row"><span>Certification</span><span>Fortinet NSE — 2025</span></div>
+        </div>
+      </div>
+
+      <div class="qualities">
+        <span class="quality-tag">Rigueur & organisation</span>
+        <span class="quality-tag">Esprit d'initiative</span>
+        <span class="quality-tag">Adaptabilité</span>
+        <span class="quality-tag">Leadership</span>
+        <span class="quality-tag">Travail en équipe</span>
+        <span class="quality-tag">Communication</span>
+      </div>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section id="competences" class="section">
+      <h2 class="section-title"><span class="section-index">02</span>Compétences</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>Langages</h3>
+          <ul class="skill-list">
+            <li><span>Python</span><span class="bar"><i style="--v:90%"></i></span></li>
+            <li><span>Java</span><span class="bar"><i style="--v:70%"></i></span></li>
+            <li><span>JavaScript</span><span class="bar"><i style="--v:70%"></i></span></li>
+            <li><span>PHP</span><span class="bar"><i style="--v:75%"></i></span></li>
+            <li><span>Bash</span><span class="bar"><i style="--v:60%"></i></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Frameworks Backend</h3>
+          <ul class="skill-list">
+            <li><span>Django / FastAPI</span><span class="bar"><i style="--v:90%"></i></span></li>
+            <li><span>Laravel</span><span class="bar"><i style="--v:80%"></i></span></li>
+            <li><span>Spring Boot</span><span class="bar"><i style="--v:65%"></i></span></li>
+            <li><span>Node.js</span><span class="bar"><i style="--v:60%"></i></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Frontend & UI</h3>
+          <ul class="skill-list">
+            <li><span>Tailwind CSS</span><span class="bar"><i style="--v:85%"></i></span></li>
+            <li><span>Flutter</span><span class="bar"><i style="--v:65%"></i></span></li>
+            <li><span>React / Angular</span><span class="bar"><i style="--v:40%"></i></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Outils & Modélisation</h3>
+          <ul class="skill-list">
+            <li><span>Git / GitHub</span><span class="bar"><i style="--v:85%"></i></span></li>
+            <li><span>Docker</span><span class="bar"><i style="--v:75%"></i></span></li>
+            <li><span>Agile / Scrum</span><span class="bar"><i style="--v:80%"></i></span></li>
+            <li><span>Modelio</span><span class="bar"><i style="--v:60%"></i></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Données & Cloud</h3>
+          <ul class="skill-list">
+            <li><span>PostgreSQL</span><span class="bar"><i style="--v:75%"></i></span></li>
+            <li><span>AWS</span><span class="bar"><i style="--v:40%"></i></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>IA & DevOps</h3>
+          <ul class="skill-list">
+            <li><span>Fine-tuning IA</span><span class="bar"><i style="--v:55%"></i></span></li>
+            <li><span>Linux</span><span class="bar"><i style="--v:70%"></i></span></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section">
+      <h2 class="section-title"><span class="section-index">03</span>Projets — modules livrés</h2>
+      <p class="section-lead">Trois systèmes de gestion développés en environnement académique et personnel, du modèle de données à l'interface.</p>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-status live">En production</span>
+            <span class="project-date">02/2026 – 07/2026</span>
+          </div>
+          <h3>Système de Gestion d'Université</h3>
+          <p class="project-role">Chef de projet & développeur — Projet IFNTI</p>
+          <p class="project-desc">
+            Pilotage d'une équipe selon la méthodologie Agile pour construire une plateforme de gestion
+            universitaire complète, couvrant les inscriptions, les formations et les emplois du temps.
+          </p>
+          <ul class="project-modules">
+            <li>Module Inscriptions</li>
+            <li>Module Formations</li>
+            <li>Module Emplois du temps</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Django</span><span class="tag">Tailwind CSS</span><span class="tag">Docker</span><span class="tag">Git/GitHub</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-status dev">Projet personnel</span>
+            <span class="project-date">11/2025 – 04/2026</span>
+          </div>
+          <h3>Gestion de Brasserie</h3>
+          <p class="project-role">Développeur full-stack</p>
+          <p class="project-desc">
+            Application couvrant tout le cycle métier d'une brasserie : stocks, production, commandes,
+            ventes, facturation et statistiques, avec une base de données relationnelle robuste.
+          </p>
+          <ul class="project-modules">
+            <li>Gestion des stocks & production</li>
+            <li>Commandes & facturation</li>
+            <li>Tableaux de statistiques</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">Tailwind CSS</span><span class="tag">Docker</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-status done">Terminé</span>
+            <span class="project-date">07/2025 – 09/2025</span>
+          </div>
+          <h3>Gestion de Pressing</h3>
+          <p class="project-role">Développeur full-stack — Projet IFNTI</p>
+          <p class="project-desc">
+            Interface responsive avec authentification et gestion des rôles, pour suivre la réception,
+            le traitement et la facturation des commandes d'un pressing.
+          </p>
+          <ul class="project-modules">
+            <li>Réception & suivi des commandes</li>
+            <li>Facturation</li>
+            <li>Authentification & rôles</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Laravel</span><span class="tag">Bootstrap</span><span class="tag">Docker</span><span class="tag">Git/GitHub</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2 class="section-title"><span class="section-index">04</span>Expérience</h2>
+
+      <div class="timeline">
+
+        <div class="commit">
+          <div class="commit-hash">#04</div>
+          <div class="commit-body">
+            <div class="commit-meta"><span class="commit-date">02/2026 – 07/2026</span><span class="commit-place">IFNTI / Sokodé</span></div>
+            <h3>Chef de Projet Développement</h3>
+            <ul>
+              <li>Pilotage d'équipe et application de la méthodologie Agile</li>
+              <li>Développement des modules Inscriptions, formations, emplois du temps</li>
+              <li>Stack technique : Django, Tailwind CSS, Docker, Git/GitHub</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="commit">
+          <div class="commit-hash">#03</div>
+          <div class="commit-body">
+            <div class="commit-meta"><span class="commit-date">11/2025 – 04/2026</span><span class="commit-place">Sokodé, Togo</span></div>
+            <h3>Développeur Full-Stack — Projet Gestion Brasserie</h3>
+            <ul>
+              <li>Développement full-stack : stocks, production, commandes, ventes, facturation, statistiques</li>
+              <li>Stack : Django, Tailwind CSS, Git/GitHub, Docker, PostgreSQL</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="commit">
+          <div class="commit-hash">#02</div>
+          <div class="commit-body">
+            <div class="commit-meta"><span class="commit-date">07/2025 – 09/2025</span><span class="commit-place">Lomé, Togo</span></div>
+            <h3>Développeur Full-Stack — Projet Gestion Pressing</h3>
+            <ul>
+              <li>Développement full-stack : réception, suivi des commandes, facturation</li>
+              <li>Interface responsive avec authentification et gestion des rôles</li>
+              <li>Stack : Laravel, Bootstrap, Git/GitHub, Docker</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="commit">
+          <div class="commit-hash">#01</div>
+          <div class="commit-body">
+            <div class="commit-meta"><span class="commit-date">10/2020 – 08/2023</span><span class="commit-place">Collège Privé, Lomé</span></div>
+            <h3>Enseignant de Mathématiques & Physique</h3>
+            <ul>
+              <li>Enseignement au cycle collège et conception de supports pédagogiques</li>
+              <li>Encadrement de groupes et suivi individuel des élèves</li>
+              <li>Développement de compétences en rigueur, pédagogie et communication</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FORMATION -->
+    <section id="formation" class="section">
+      <h2 class="section-title"><span class="section-index">05</span>Formation</h2>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <span class="edu-date">2023 – 2026</span>
+          <h3>Licence Professionnelle Informatique des Organisations</h3>
+          <p>IFNTI / Sokodé — Option Développement d'Applications, DevOps</p>
+        </div>
+        <div class="edu-card">
+          <span class="edu-date">2014 – 2018</span>
+          <h3>Licence en Mathématiques</h3>
+          <p>Université de Lomé — Logique, Algorithmique, Analyse</p>
+        </div>
+        <div class="edu-card">
+          <span class="edu-date">2014</span>
+          <h3>Baccalauréat Série D</h3>
+          <p>Lycée de Kpodzi, Kpalimé</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <h2 class="section-title"><span class="section-index">06</span>Contact</h2>
+      <p class="section-lead">Une opportunité de stage, une question sur un projet ? Écrivez-moi.</p>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:willifrancis39@gmail.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">willifrancis39@gmail.com</span>
+        </a>
+        <a class="contact-card" href="tel:+22890646424">
+          <span class="contact-label">Téléphone</span>
+          <span class="contact-value">+228 90 64 64 24</span>
+        </a>
+        <a class="contact-card" href="https://linkedin.com/in/koffi-jean-socrate-dado-22b01814b" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">koffi-jean-socrate-dado</span>
+        </a>
+        <a class="contact-card" href="https://github.com/willi16" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/willi16</span>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <span>DADO Koffi Jean Socrate — Lomé, Togo</span>
+        <span>Références disponibles sur demande</span>
+      </footer>
+    </section>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
